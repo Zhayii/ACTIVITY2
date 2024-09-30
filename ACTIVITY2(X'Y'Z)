@@ -1,0 +1,39 @@
+using System;
+
+namespace TakesThreeNumbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Program that takes three numbers (x,y,z)");
+
+            Double x;
+            Double y;
+            Double z;
+
+            Console.Write("Enter the value of x: ");
+            x = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the value of y: ");
+            y = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the value of z: ");
+            z = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("");
+
+            Double result1;
+            Double result2;
+
+            result1 = (x + y) * z;
+            result2 = (x * y) + (y * z);
+
+            Console.WriteLine("(x + y) * z");
+            Console.WriteLine("(" + x + "+" + y + ") * " + z + "\nis equal to = {0}", result1);
+            Console.WriteLine("");
+            Console.WriteLine("(x * y) + (y * z)", result2);
+            Console.WriteLine(x + "*" + y + "+" + y + "*" + z + "\nis equal to = {0}", result2);
+            Console.ReadKey(true);
+        }
+    }
+}
